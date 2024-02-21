@@ -2,6 +2,6 @@
 
   $arr = ["Teste", "Olá", "Balão", "Janela", "Planta"];
 
-  $teste = implode(", ", $arr);
+  $teste = implode(" * ", $arr);
 
   echo $teste;

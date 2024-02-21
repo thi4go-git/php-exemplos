@@ -1,14 +1,15 @@
 <?php
 
-  // Não é case sensitive
-  echo "teste <br>";
-  eChO "testando 2 <br>";
-  ECHO "testando 3 <br>";
+// Não é case sensitive
+echo "teste <br>";
+echo "testando 2 <br>";
+echo 'teste';
+echo "testando 3 <br>";
 
-  // É case sensitive
-  $nome = "Matheus";
-  $NOME = "Teste";
+// É case sensitive (Variáveis globais, a variável sempre começa com $)
+$nome = "Matheus";
+$NOME = "Teste";
 
-  echo $nome;
-  echo "<br>";
-  echo $NOME;
+echo $nome;
+echo "<br>";
+echo $NOME;

@@ -1,6 +1,6 @@
 <?php
 
-  if(3 == 3) {
+  if(3 === 3) {
     echo "Comparação verdadeira 1<br>";
   }
 
@@ -23,7 +23,7 @@
   $nome = "Matheus";
   $nomeDoSistema = "João";
 
-  if($nome == $nomeDoSistema) {
+  if($nome === $nomeDoSistema) {
     echo "O nome coincide 1<br>";
   }
 

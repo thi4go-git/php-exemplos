@@ -1,15 +1,17 @@
 <?php
 
-  echo NULL;
+echo NULL;
 
-  $nome = NULL;
+$nome = NULL;
 
-  if(is_null($nome)) {
-    echo "O valor é nulo!";
-  }
+if (is_null($nome)) {
+  echo "O valor é nulo 1!";
+}
 
-  $nome = "Matheus";
+$nome = "Matheus";
 
-  if(is_null($nome)) {
-    echo "O valor é nulo!";
-  }
+echo ('<br>');
+
+if (!is_null($nome)) {
+  echo "O valor não é nulo! $nome";
+}

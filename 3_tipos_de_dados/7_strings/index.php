@@ -9,3 +9,4 @@
 
   echo "Ele tem $idade anos <br>";
   echo 'Ele tem $idade anos';
+

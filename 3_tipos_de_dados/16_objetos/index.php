@@ -1,19 +1,49 @@
 <?php
 
-  class Pessoa {
+class Pessoa{
 
-    function falar() {
-      echo "Olá pessoal!";
-    }
+  private $nome;
 
+  function falar(){
+    echo "Olá pessoal, meu nome é: $this->nome";
   }
 
-  $matheus = new Pessoa();
+  // Getter para o atributo "nome"
+  public function getNome(){
+    return $this->nome;
+  }
 
-  $matheus->nome = "Matheus";
+  // Setter para o atributo "nome"
+  public function setNome($nome){
+    $this->nome = $nome;
+  }
 
-  echo $matheus->nome;
+}
 
-  echo "<br>";
+interface AnaoInterface {
+   function falarAnao();
+}
 
-  $matheus->falar();
+class Anao extends Pessoa implements AnaoInterface{
+  function falar(){
+    echo "Olá pessoal, sou anão, meu nome é: " . $this->getNome();
+  }
+
+  function falarAnao(){
+    echo "falarAnao INTERFACE";
+  }
+}
+
+$matheus = new Pessoa();
+$matheus->setNome("Matheus");
+echo $matheus->getNome();
+echo "<br>";
+$matheus->falar();
+//------------------------------------------------------
+$anao = new Anao();
+$anao->setNome("anao");
+echo $anao->getNome();
+echo "<br>";
+$anao->falar();
+echo "<br>";
+$anao->falarAnao();
